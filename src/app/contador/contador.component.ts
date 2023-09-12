@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./contador.component.css']
 })
 export class ContadorComponent {
-
+  persona = {
+    nombre: 'Hella',
+    apellido: 'G',
+    edad:20
+  }
 }
