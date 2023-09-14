@@ -1,2 +1,24 @@
 <p>contador works!</p>
 <p>Mi nombre es: {{persona.nombre}} {{persona.apellido}}</p>
+<button (click)="decrementar()" class="btn btn-danger">
+  -
+</button>
+<span>{{numero}}</span>
+<button (click)="incrementar()" class="btn btn-primary">
+  +
+</button>
+<button [class]= "{'disabled':button_disabled}" class="btn btn-danger mx-1">boton 1</button>
+<button [class]= "{'disabled':button_disabled}" class="btn btn-warning mx-1">boton 2</button>
+<button [class] = "{'disabled':button_disabled}" class="btn btn-primary mx-1">boton 3</button>
+<p class="text-success">color verde</p>
+<button class="btn btn-success" (click)="button_disabled=!button_disabled">
+  activar /desactivar
+</button>
+<br>
+<br>
+<div>
+  <button class="btn btn-danger mx-1" (click)="img1='https://img.bekiamascotas.com/articulos/95000/95015/7.jpg'">img 1</button>
+  <button class="btn btn-success mx-1" (click)="img1='https://s1.ppllstatics.com/lasprovincias/www/multimedia/202112/22/media/cortadas/gato-fotolia-k8eH-U160340519019xEE-624x385@Las%20Provincias.jpg'">img 2</button>
+</div>
+<br>
+<img [src]=img1 alt="cat" height="150">
